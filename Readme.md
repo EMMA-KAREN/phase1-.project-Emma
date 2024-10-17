@@ -55,5 +55,5 @@ The application works perfectly well, no bug
 Contact details (mumokaren@gmail.com, 079792951, )
 
 ### License
-*LIcenced under the [MT-licence]
+*LIcenced under the [MT-licence]https://github.com/EMMA-KAREN/phase1-.project-Emma/blob/master/Licence%20.md%20
 Copyright (c) 2024 **Emmaculate Mwikali*

@@ -1,5 +1,5 @@
 // Fetch all pets and display them grouped by groomer
-fetch('http://localhost:3000/pets')
+fetch('https://phase1-project-emma.onrender.com/pets')
   .then((res) => res.json())
   .then((data) => {
     const petsList = document.getElementById("pets_list");
@@ -76,7 +76,7 @@ addPetForm.addEventListener("submit", (event) => {
     picture: document.getElementById("picture").value
   };
 
-  fetch('http://localhost:3000/pets', {
+  fetch('https://phase1-project-emma.onrender.com/pets', {
     method: 'POST',
     body: JSON.stringify(newPet),
     headers: {
@@ -117,7 +117,7 @@ addPetForm.addEventListener("submit", (event) => {
 
 // Delete a pet
 function deletePet(id) {
-  fetch(`http://localhost:3000/pets/${id}`, {
+  fetch(`https://phase1-project-emma.onrender.com/pets/${id}`, {
     method: 'DELETE',
   })
     .then(() => {
@@ -138,7 +138,7 @@ function viewPet(id) {
 }
 // Edit a pet - open modal with existing details
 function editPet(id) {
-  fetch(`http://localhost:3000/pets/${id}`)
+  fetch(`https://phase1-project-emma.onrender.com/${id}`)
     .then((res) => res.json())
     .then((pet) => {
       // Populate the modal form with the pet's current values for editing
@@ -169,7 +169,7 @@ function editPet(id) {
           picture: document.getElementById("editPetPicture").value,
         };
 
-        fetch(`http://localhost:3000/pets/${id}`, {
+        fetch(`https://phase1-project-emma.onrender.com/pets/${id}`, {
           method: 'PATCH',
           body: JSON.stringify(updatedPet),
           headers: {
@@ -206,7 +206,7 @@ let groomingTips = []; // Array to store grooming tips
 // Fetch existing grooming tips from the server when the page loads
 async function fetchGroomingTips() {
   try {
-    const response = await fetch("http://localhost:3000/groomingTips");
+    const response = await fetch("https://phase1-project-emma.onrender.com/groomingTips");
     if (!response.ok) {
       throw new Error("Network response was not ok " + response.statusText);
     }
@@ -328,7 +328,7 @@ function displayGroomingTips() {
 // Function to add a new grooming tip to the server
 async function addGroomingTip(tip) {
   try {
-    const response = await fetch("http://localhost:3000/groomingTips", {
+    const response = await fetch("https://phase1-project-emma.onrender.com/groomingTips", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -349,7 +349,7 @@ async function addGroomingTip(tip) {
 // Function to update an existing grooming tip on the server
 async function updateGroomingTip(tip) {
   try {
-    const response = await fetch(`http://localhost:3000/groomingTips/${tip.id}`, {
+    const response = await fetch(`https://phase1-project-emma.onrender.com/groomingTips/${tip.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -370,7 +370,7 @@ async function updateGroomingTip(tip) {
 // Function to delete a grooming tip from the server
 async function deleteGroomingTip(tip) {
   try {
-    const response = await fetch(`http://localhost:3000/groomingTips/${tip.id}`, {
+    const response = await fetch(`https://phase1-project-emma.onrender.com/groomingTips/${tip.id}`, {
       method: "DELETE",
     });
 
