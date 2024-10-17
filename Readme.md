@@ -5,7 +5,7 @@ This code demonstrates a web application for managing pet grooming information. 
 
 ## Key Features:
 
-* Fetches pet data from a server (simulated with http://localhost:3000/pets).
+* Fetches pet data from a server (simulated with https://phase1-project-emma.onrender.com//pets).
 * Groups pets by groomer and displays them in separate sections.
 * Enables adding new pets with details like owner, breed, grooming status, etc.
 * Provides options for deleting, editing, and viewing pet details.
@@ -16,20 +16,22 @@ This code demonstrates a web application for managing pet grooming information. 
 ## Technical Notes:
 
 *The code utilizes JavaScript with DOM manipulation and event handling.
-It interacts with a server-side API (http://localhost:3000/pets and http://localhost:3000/groomingTips) for fetching, adding, updating, and deleting data.
+It interacts with a server-side API (https://phase1-project-emma.onrender.com//pets and https://phase1-project-emma.onrender.com//groomingTips) for fetching, adding, updating, and deleting data.
 
 *Bootstrap classes are used for styling the user interface.
 Getting Started:
 
 Ensure you have a server running that provides the necessary API endpoints.
 Copy the code into your project directory.
-Adjust the base URL (http://localhost:3000/pets) if your server endpoint differs.
+Adjust the base URL ('https://phase1-project-emma.onrender.com/pets') if your server endpoint differs.
 Open the HTML file (index.html) in a web browser to interact with the application.
 
 ## Dependencies:
 
 * Bootstrap (for styling)
 * jQuery (for DOM manipulation)
+* render https://phase1-project-emma.onrender.com/pets 
+        https://phase1-project-emma.onrender.com/groomingtips
 
 ## Further Development:
 
@@ -49,7 +51,7 @@ The provided code includes the following main files:
 The application works perfectly well, no bug
 
 ## Live server
-* You can view the web live on 
+* You can view the web live on https://emma-karen.github.io/phase1-.project-Emma/
 
 ## Support and contact details
 Contact details (mumokaren@gmail.com, 079792951, )
