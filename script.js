@@ -138,7 +138,7 @@ function viewPet(id) {
 }
 // Edit a pet - open modal with existing details
 function editPet(id) {
-  fetch(`https://phase1-project-emma.onrender.com/pet/${id}`)
+  fetch(`https://phase1-project-emma.onrender.com/pets/${id}`)
     .then((res) => res.json())
     .then((pet) => {
       // Populate the modal form with the pet's current values for editing
@@ -195,7 +195,6 @@ function createGroomerSection(groomer) {
 }
 
 
-// Select the HTML elements for the form and tips list
 // Select the HTML elements for the form and tips list
 const groomingTipsForm = document.getElementById("grooming_tips_form");
 const tipsList = document.getElementById("tips_list");
