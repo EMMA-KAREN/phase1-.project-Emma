@@ -138,7 +138,7 @@ function viewPet(id) {
 }
 // Edit a pet - open modal with existing details
 function editPet(id) {
-  fetch(`https://phase1-project-emma.onrender.com/pet${id}`)
+  fetch(`https://phase1-project-emma.onrender.com/pet/${id}`)
     .then((res) => res.json())
     .then((pet) => {
       // Populate the modal form with the pet's current values for editing
