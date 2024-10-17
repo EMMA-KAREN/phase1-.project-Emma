@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Grooming App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Pet Grooming</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Services</a>
+              </li>
+             
+              <li class="nav-item"><a class="nav-link" href="#Appointments">Appointments</a></li>
+              <li class="nav-item"><a class="nav-link" href="#tips & recommendation">tips & Recommendations</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Experiences</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      
+    <!-- Header Section -->
+    <header class="text-center mt-5">
+      <h1>Simplify Pet Grooming</h1>
+      <p>Book grooming services with ease for your beloved pets</p>
+      <p>Your one-stop solution for keeping your furry friends looking their best!</p>
+      <p>From baths to haircuts, we offer a variety of grooming services tailored to meet the needs of all pet breeds.</p>
+      <a href="#Appointments" class="btn btn-primary mt-3">Schedule an Appointment</a>
+  </header>
+    
+    <!-- Add Pet Section -->
+    <div id="Appointments" class="container mt-5">
+      <h1>PETS WITH THEIR GROOMER</h1>
+     <div class="container bg-light p-2 mt-3" style="width: 50vw;">
+     
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addPetModal">
+        MAKE AN APPOINTMENT
+        </button>
+
+        <!-- Modal -->
+      
+        <div class="modal fade" id="addPetModal" tabindex="-1" aria-labelledby="addPetModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="addPetModalLabel">Add a Pet</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              
+                <form id="add_pet_form">
+                    <div class="modal-body">
+                      <div class="mb-3">
+                          <label for="petOwner">Pet Owner:</label>
+                          <input type="text" class="form-control" id="petOwner" placeholder="Enter Pet Owner" required>
+                      </div>
+                      <div class="mb-3">
+                          <label for="petId">Pet ID:</label>
+                          <input type="text" class="form-control" id="petId" placeholder="Enter Pet ID" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="petName">Pet Name:</label>
+                          <input type="text" class="form-control" id="petName" placeholder="Enter Pet Name" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="petAge">Pet Age:</label>
+                          <input type="number" class="form-control" id="petAge" placeholder="Enter Pet Age" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="petBreed">Pet Breed:</label>
+                          <input type="text" class="form-control" id="petBreed" placeholder="Enter Pet Breed" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="groomingDate">Grooming Schedule Date:</label>
+                          <input type="date" class="form-control" id="groomingDate" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="groomingStatus">Has the pet been served?:</label>
+                          <select class="form-control" id="groomingStatus" required>
+                              <option value="">Select</option>
+                              <option value="Yes">Yes</option>
+                              <option value="No">No</option>
+                          </select>
+                      </div>
+                      
+                      <div class="form-group">
+                          <label for="groomer">Groomer:</label>
+                          <select class="form-control" id="groomer" required>
+                              <option value="">Select Groomer</option>
+                              <option value="John">John</option>
+                              <option value="Sarah">Sarah</option>
+                              <option value="Mike">Mike</option>
+                              <option value="Anna">Anna</option>
+                              <option value="Steve">Steve</option>
+                          </select>
+                      </div>
+                      <div class="form-group">
+                          <label for="groomingHistory">Grooming History:</label>
+                          <textarea class="form-control" id="groomingHistory" rows="3" placeholder="Enter Grooming History" required></textarea>
+                      </div>
+                      <div class="form-group">
+                          <label for="picture">Pet Picture:</label>
+                          <input type="url" class="form-control" id="picture" required placeholder="Picture URL" />
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+    <div id="pets_list" class="container mt-5 row">
+      <!-- Pets will be displayed here -->
+    </div>
+    <!-- Edit Pet Modal -->
+<!-- Edit Pet Modal -->
+<div class="modal fade" id="editPetModal" tabindex="-1" aria-labelledby="editPetModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editPetModalLabel">Edit Pet</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="edit_pet_form">
+          <div class="mb-3">
+            <label for="editPetName" class="form-label">Pet Name</label>
+            <input type="text" class="form-control" id="editPetName" required>
+          </div>
+          <div class="mb-3">
+            <label for="editPetOwner" class="form-label">Owner</label>
+            <input type="text" class="form-control" id="editPetOwner" required>
+          </div>
+          <div class="mb-3">
+            <label for="editPetBreed" class="form-label">Breed</label>
+            <input type="text" class="form-control" id="editPetBreed" required>
+          </div>
+          <div class="mb-3">
+            <label for="editGroomer" class="form-label">Groomer</label>
+            <input type="text" class="form-control" id="editGroomer" required>
+          </div>
+          <div class="mb-3">
+            <label for="editGroomingDate" class="form-label">Grooming Date</label>
+            <input type="date" class="form-control" id="editGroomingDate" required>
+          </div>
+          <div class="mb-3">
+            <label for="editGroomingStatus" class="form-label">Grooming Status</label>
+            <input type="text" class="form-control" id="editGroomingStatus" required>
+          </div>
+          <div class="mb-3">
+            <label for="editPetPicture" class="form-label">Picture URL</label>
+            <input type="text" class="form-control" id="editPetPicture" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Save changes</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="tips & Recommendations" class="container" >
+
+
+    <div class="mb-5">
+      <h2>Pet Grooming Tips & Recommendations</h2>
+      <form id="grooming_tips_form">
+        <div class="mb-3">
+          <label for="tipTitle" class="form-label">Tip Title</label>
+          <input type="text" class="form-control" id="tipTitle" required>
+        </div>
+        <div class="mb-3">
+          <label for="tipDetails" class="form-label">Tip Details</label>
+          <textarea class="form-control" id="tipDetails" rows="3" required></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="productRecommendations" class="form-label">Product Recommendations</label>
+          <input type="text" class="form-control" id="productRecommendations" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Tip</button>
+      </form>
+    </div>
+  
+     <h3 class="mt-5">Shared Tips</h3>
+     <div id="tips_list" class="row"></div></div>
+ 
+     <div class="container">
+      <h1 class="mt-5">Pet Grooming Experiences</h1>
+      <div id="experiences_section" class="row">
+          <!-- Client 1 -->
+          <div class="experience" id="client1">
+              <h3>Client 1 - Sarah with her dog Max</h3>
+              <div class="experience-content">
+                  <img src="./img/maxjpg" alt="Sarah's dog Max" class="experience-img">
+                  <p>"Max had an amazing grooming session! The staff were kind, and his coat has never been shinier. We'll be back for sure!"</p>
+              </div>
+          </div>
+          
+          <!-- Client 2 -->
+          <div class="experience" id="client2">
+              <h3>Client 2 - John with his cat Bella</h3>
+              <div class="experience-content">
+                  <img src="./img/bella.jpg" alt="John's cat Bella" class="experience-img">
+                  <p>"Bella usually hates baths, but she was surprisingly calm during her grooming. Great service, highly recommend!"</p>
+              </div>
+          </div>
+          
+          <!-- Client 3 -->
+          <div class="experience" id="client3">
+              <h3>Client 3 - Anna with her rabbit Fluffy</h3>
+              <div class="experience-content">
+                  <img src="./img/fluffy.jpg" alt="Lisa's rabbit Fluffy" class="experience-img">
+                  <p>"Fluffy got the best nail trimming here. The groomers are experienced, and we are happy with the results."</p>
+              </div>
+          </div>
+          
+          <!-- Client 4 -->
+          <div class="experience" id="client4">
+              <h3>Client 4 - ken with his dog Rocky</h3>
+              <div class="experience-content">
+                  <img src="./img/rocky.jpg" alt="Mark's dog Rocky" class="experience-img">
+                  <p>"Rocky loved his grooming session, and the de-shedding treatment worked wonders!"</p>
+              </div>
+          </div>
+          
+          <!-- Client 5 -->
+          <div class="experience" id="client5">
+              <h3>Client 5 - Steve with her parrot Kiwi</h3>
+              <div class="experience-content">
+                  <img src="./img/kiwi.jpg" alt="Emily's parrot Kiwi" class="experience-img">
+                  <p>"Kiwi's feathers look vibrant after her grooming session. It's hard to find a place that caters to birds, but this one does!"</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <footer class="text-center mt-5">
+        <p>&copy; 2024 Pet Grooming </p>
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Terms and Conditions</a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
