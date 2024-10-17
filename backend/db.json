@@ -1,0 +1,104 @@
+{
+  "pets": [
+    {
+      "id": "1",
+      "owner": "Alicevf",
+      "petName": "Bella",
+      "petAge": 3,
+      "petBreed": "Golden Retriever",
+      "groomingDate": "2023-10-14",
+      "groomingStatus": "No",
+      "groomer": "John",
+      "groomingHistory": "Groomed last month. Regular grooming required.",
+      "picture": "https://images.pexels.com/photos/19148552/pexels-photo-19148552/free-photo-of-dog-lying-on-the-couch.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "id": "9beb",
+      "owner": "Matthew",
+      "petName": "Ger",
+      "petAge": 7,
+      "petBreed": "rottweiler",
+      "groomingDate": "2024-10-11",
+      "groomingStatus": "Yes",
+      "groomer": "Sarah",
+      "groomingHistory": "Regular grooming needed.",
+      "picture": "https://images.pexels.com/photos/2742261/pexels-photo-2742261.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "id": "a57f",
+      "owner": "Matthew",
+      "petName": "Shek",
+      "petAge": 6,
+      "petBreed": "Birman",
+      "groomingDate": "2024-10-18",
+      "groomingStatus": "Yes",
+      "groomer": "Anna",
+      "groomingHistory": "Dental care, ear cleaning, check for fleas and ticks.",
+      "picture": "https://i.pinimg.com/564x/41/a3/35/41a3358708cc295321a0b4586e93c4c3.jpg"
+    },
+    {
+      "id": "e34f",
+      "owner": "Teoil",
+      "petName": "Bits",
+      "petAge": 5,
+      "petBreed": "Rex Rabbit",
+      "groomingDate": "2024-10-03",
+      "groomingStatus": "Yes",
+      "groomer": "Ken",
+      "groomingHistory": "Nail trims, fur brushing, and ear cleaning.",
+      "picture": "https://i.pinimg.com/enabled/564x/4b/3a/4d/4b3a4dbb45414ef05118c25e3f29c7fb.jpg"
+    },
+    {
+      "id": "886c",
+      "owner": "AZ",
+      "petName": "Well",
+      "petAge": 6,
+      "petBreed": "Parrot",
+      "groomingDate": "2024-10-10",
+      "groomingStatus": "Yes",
+      "groomer": "Steve",
+      "groomingHistory": "Beak trimming, feather care, and cage cleaning.",
+      "picture": "https://i.pinimg.com/236x/ed/4c/ab/ed4cab6e4423deb0c4252ba361a6f171.jpg"
+    },
+    {
+      "id": "1da1",
+      "owner": "BOB",
+      "petId": "002",
+      "petName": "Max",
+      "petAge": "2",
+      "petBreed": "Beagle",
+      "groomingDate": "2024-10-20",
+      "groomingStatus": "No",
+      "groomer": "Sarah",
+      "groomingHistory": " History: Likes nail trimming.",
+      "picture": "https://i.pinimg.com/enabled_lo/236x/7c/1b/be/7c1bbeec80cbfa6c266bdaa1ef5af10e.jpg"
+    },
+    {
+      "id": "6014",
+      "owner": "Carol",
+      "petId": "003",
+      "petName": "Luna",
+      "petAge": "4",
+      "petBreed": "Poodle",
+      "groomingDate": "2024-10-19",
+      "groomingStatus": "No",
+      "groomer": "Mike",
+      "groomingHistory": " Needs extra care with curly hair.",
+      "picture": "https://i.pinimg.com/236x/8b/cf/89/8bcf8906f0771731e8cbfeb0575fb545.jpg"
+    }
+  ],
+  "groomingTips": [
+    {
+      "title": "Bathing Your Dog",
+      "details": "Ensure water temperature is warm and use a mild dog shampoo.",
+      "products": "Oatmeal Dog Shampoo, Soft Bristle Brush",
+      "id": "a441"
+    },
+    {
+      "title": "Brushing Long Hair Cats",
+      "details": "Brush daily to prevent matting, especially around the undercoat.",
+      "products": "Stainless Steel Comb, Detangling Spray",
+      "id": "4b97"
+    }
+  ]
+}
